@@ -1,0 +1,9 @@
+namespace: dev
+resources:
+  - ../../base/
+
+patches:
+  - path: ./configmap.yml
+    target:
+      kind: ConfigMap
+      labelSelector: nginx
